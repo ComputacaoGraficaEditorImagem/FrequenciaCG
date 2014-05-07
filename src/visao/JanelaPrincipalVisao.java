@@ -1090,7 +1090,9 @@ public final class JanelaPrincipalVisao extends JFrame
 	bufferedImage = null;
 					  
         try{
-          bufferedImage = ImageIO.read(arquivo);
+            
+          bufferedImage = ImageIO.read(arquivo); 
+          
         }
         catch(IOException exc){
           JOptionPane.showMessageDialog(null, 
@@ -1286,7 +1288,7 @@ public final class JanelaPrincipalVisao extends JFrame
             
             if(e.getSource() == sobreAplicacaoJM){
                 try {
-//                    JOptionPane.showMessageDialog(null,"OK !!");
+
                        new AjudaAplicacao().setVisible(true);
                 } catch (MalformedURLException ex) {
                     Logger.getLogger(JanelaPrincipalVisao.class.getName()).log(Level.SEVERE, null, ex);
